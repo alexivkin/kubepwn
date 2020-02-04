@@ -1,14 +1,26 @@
 # A collection of resources about Kubernetes security
 
-Gartner - Best Practices for Running Containers and Kubernetes in Production
 
-https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster
+*[Publications](Publications/)
+*[Surveys](Surveys/)
+*[Talks](Talks/)
+*[Tools](Tools/)
 
-https://kubernetes.io/docs/tasks/debug-application-cluster/audit/
+## Standards and recommendations
 
-why kubernetes is complex - https://medium.com/uptime-99/kubernetes-202-making-it-fully-operational-7416e4bb15ab
+* CIS Benchmark - https://www.cisecurity.org/benchmark/kubernetes/
+* [Gartner - Best Practices for Running Containers and Kubernetes in Production](https://www.gartner.com/en/documents/3902966/best-practices-for-running-containers-and-kubernetes-in-)
 
-windows kubernetes - https://kubernetes.io/docs/setup/production-environment/windows/intro-windows-in-kubernetes/
+## Introductory articles
+
+* [Why kubernetes is complex](https://medium.com/uptime-99/kubernetes-202-making-it-fully-operational-7416e4bb15ab)
+* https://wilsonmar.github.io/kubernetes/
+
+
+## Hardening
+
+* https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster
+
 
 ## Authentication and authorization
 
@@ -31,10 +43,6 @@ windows kubernetes - https://kubernetes.io/docs/setup/production-environment/win
 
 * https://www.4armed.com/blog/kubeletmein-kubelet-hacking-tool/
 
-## Introductory articles
-
-* https://wilsonmar.github.io/kubernetes/
-
 ### Webhooks and sidecars
 
 * https://medium.com/dowjones/how-did-that-sidecar-get-there-4dcd73f1a0a4
@@ -47,3 +55,7 @@ windows kubernetes - https://kubernetes.io/docs/setup/production-environment/win
 
 * managing secrets in a docker swarm - https://docs.docker.com/engine/swarm/secrets/#read-more-about-docker-secret-commands
 * secret management-  https://www.katacoda.com/courses/docker-security/vault-secrets https://www.katacoda.com/courses/docker-security/docker-volume-libsecret
+
+## Windows kubernetes
+
+* https://kubernetes.io/docs/setup/production-environment/windows/intro-windows-in-kubernetes/
