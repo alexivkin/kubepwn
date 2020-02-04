@@ -1,10 +1,10 @@
 # A collection of resources about Kubernetes security
 
 
-*[Publications](Publications/)
-*[Surveys](Surveys/)
-*[Talks](Talks/)
-*[Tools](Tools/)
+* [Publications](Publications/)
+* [Surveys](Surveys/)
+* [Talks](Talks/)
+* [Tools](Tools/)
 
 ## Standards and recommendations
 
