@@ -9,6 +9,8 @@ Check out the folders here:
 
 For container related resources check my [other repo](https://github.com/alexivkin/containerpwn)
 
+[My CircleCityCon 2020 Talk](Talks/CircleCityCon-2020-Practical-security-in-the-brave-new-Kubernetes-world.pdf)
+
 ## Introductory articles
 
 * [Why kubernetes is complex](https://medium.com/uptime-99/kubernetes-202-making-it-fully-operational-7416e4bb15ab)
@@ -32,6 +34,18 @@ For container related resources check my [other repo](https://github.com/alexivk
 * [Managed Kubernetes Inspection Tool](https://github.com/darkbitio/mkit)
 * [Kubernetes pentesting tool](https://github.com/inguardians/peirates)
 * [NodyHub's K8s CTF](https://github.com/NodyHub/k8s-ctf-rocks/)
+
+### K8s API clients
+
+* Istio API - `curl -sL https://github.com/istio/istio/releases/download/1.4.0-beta.0/istioctl-1.4.0-beta.0-linux.tar.gz | tar xzf -`
+* Kubernetes API - `curl -sLO https://storage.googleapis.com/kubernetes-release/release/v1.16.0/bin/linux/amd64/kubectl; chmod u+x kubectl`
+* Docker registy - `curl -sL https://github.com/genuinetools/reg/releases/download/v0.16.0/reg-linux-amd64 -o reg; chmod u+x reg`
+* Better alternative to the docker CLI - `curl -sL https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.16.1/crictl-v1.16.1-linux-amd64.tar.gz | tar zxf -`
+* Etcd API- `curl -sL https://github.com/etcd-io/etcd/releases/download/v3.4.3/etcd-v3.4.3-linux-amd64.tar.gz | tar zxf -`
+
+### Pwnga tools
+
+* GCP and DO metadata for easy kube pwnage `curl -sL https://github.com/4ARMED/kubeletmein/releases/download/v0.6.5/kubeletmein_0.6.5_linux_amd64 -o kubeletmein; chmod u+x kubeletmein`
 
 ## Reads and presos
 
