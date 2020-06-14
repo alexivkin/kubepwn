@@ -1,19 +1,18 @@
 # A collection of resources about Kubernetes security
 
+Check out the folders here:
+
 * [Publications](Publications/)
 * [Surveys](Surveys/)
 * [Talks](Talks/)
 * [Tools](Tools/)
 
+For container related resources check my [other repo](https://github.com/alexivkin/containerpwn)
+
 ## Introductory articles
 
 * [Why kubernetes is complex](https://medium.com/uptime-99/kubernetes-202-making-it-fully-operational-7416e4bb15ab)
 * [Wilson Mar's K8s](https://wilsonmar.github.io/kubernetes/)
-
-### Security intros
-
-* [NodyHub CTF](https://github.com/NodyHub/k8s-ctf-rocks/)
-* [Trail of Bits kubernetes audit](https://github.com/trailofbits/audit-kubernetes)
 * [GKE advice](https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster)
 
 ## Tools
@@ -32,14 +31,16 @@
 * [Another RBAC analyzer](https://github.com/cyberark/KubiScan)
 * [Managed Kubernetes Inspection Tool](https://github.com/darkbitio/mkit)
 * [Kubernetes pentesting tool](https://github.com/inguardians/peirates)
+* [NodyHub's K8s CTF](https://github.com/NodyHub/k8s-ctf-rocks/)
 
 ## Reads and presos
 
 * [KubeCon Slides](https://sbueringer.github.io/kubecon-slides)
+* [Trail of Bits kubernetes audit](https://github.com/trailofbits/audit-kubernetes)
 
 ## Standards and recommendations
 
-* CIS Benchmark - https://www.cisecurity.org/benchmark/kubernetes/
+* [CIS Benchmark[(https://www.cisecurity.org/benchmark/kubernetes/)
 * [Gartner - Best Practices for Running Containers and Kubernetes in Production](https://www.gartner.com/en/documents/3902966/best-practices-for-running-containers-and-kubernetes-in-)
 
 ## Documentation
