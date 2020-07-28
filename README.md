@@ -10,8 +10,6 @@ Check out the folders here:
 
 For container related resources check my [other repo](https://github.com/alexivkin/containerpwn)
 
-[My CircleCityCon 2020 Talk](Talks/CircleCityCon-2020-Practical-security-in-the-brave-new-Kubernetes-world.pdf)
-
 ## Tools
 
 ### Red
