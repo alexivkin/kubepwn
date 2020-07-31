@@ -14,12 +14,14 @@ For container related resources check my [other repo](https://github.com/alexivk
 
 ### Red
 
-* [auger](https://github.com/jpbetz/auger) - Directly access data objects stored in `etcd` by `kubernetes
-* [kubeletmein](https://www.4armed.com/blog/kubeletmein-kubelet-hacking-tool/) - for GKE and DOKS
-* [dopwn](https://github.com/4ARMED/dopwn) - DigitalOcean Kubernetes Pwner
+* [auger](https://github.com/jpbetz/auger) - Directly access data objects stored in `etcd` by Kubernetes
+* [botb](https://github.com/brompwnie/botb) - Exploit common container vulnerabilities
+* [kubeletmein](https://www.4armed.com/blog/kubeletmein-kubelet-hacking-tool/) - stealing metadata for GKE and DOKS abuse
+* [dopwn](https://github.com/4ARMED/dopwn) - DigitalOcean Managed Kubernetes Pwner
 * [go-pillage-registries](https://github.com/nccgroup/go-pillage-registries) - Docker registry scrapper
 * [peirates](https://github.com/inguardians/peirates) - Kubernetes pentesting tool
-* [Kubetap](https://soluble-ai.github.io/kubetap/) - Sniffing kubernetes traffic
+* [amicontained](https://github.com/genuinetools/amicontained) - Check containment setup
+* [conmachi](https://github.com/nccgroup/ConMachi) - Another containment check tool
 
 ### Purple
 
@@ -31,9 +33,12 @@ For container related resources check my [other repo](https://github.com/alexivk
 * [Kube-bench](https://github.com/aquasecurity/kube-bench) - Checking configuration weaknesses and bad defaults, check cluster against CIS-Benchmarks
 * [Kubesec](https://github.com/controlplaneio/kubesec) - Kubernets manifests and helm charts security risk analysis
 * [kube-scan](https://github.com/octarinesec/kube-scan) - Kubernetes risk assessment
+* [Popeye](https://github.com/derailed/popeye) - Cluster scanner for potential issues with deployed resources and configurations.
 * [Rakess](https://github.com/corneliusweig/rakkess) - kubectl plugin to show an access matrix for server resources
 * [audit2rbac](https://github.com/liggitt/audit2rbac) - RBAC config review
 * [kubeaudit](https://github.com/Shopify/kubeaudit) - Various security config checks
+* [ktunnel](https://github.com/omrikiei/ktunnel) - reverse tunnel for K8s services to contact your host
+* [Kubetap](https://soluble-ai.github.io/kubetap/) - Sniffing and MitM kubernetes traffic
 
 ### Blue
 
@@ -65,10 +70,12 @@ For container related resources check my [other repo](https://github.com/alexivk
 * [Falco](https://github.com/falcosecurity/falco) - Real time behavioral activity monitor designed to detect anomalous activity
 * [Gatekeeper](https://github.com/open-policy-agent/gatekeeper) - OPA with audit and [konstraint](https://github.com/plexsystems/konstraint), its policy manager
 * [Kritis](https://github.com/grafeas/kritis) - Deploy-time scanner and signature checker for [Grafeas](https://github.com/grafeas/grafeas), the 3rd-party artifact tracker. [more about these here](https://www.infoq.com/presentations/supply-grafeas-kritis/)
+* [Inspektor Gadget](https://github.com/kinvolk/inspektor-gadget) - Runtime detection and configuration of network traffic, pods and policies
 * [Kube forensics](https://github.com/keikoproj/kube-forensics)
 
 #### Secret vaulting
 
+* [Sealed secrets](https://github.com/bitnami-labs/sealed-secrets) - Encrypting secrets so they can be safely stored in public repos
 * [Banzaicloud bank-vaults](https://github.com/banzaicloud/bank-vaults)
 * [External Secrets](https://github.com/godaddy/kubernetes-external-secrets) - Shim for AWS Secrets Manager and HashiCorp Vault
 
@@ -98,6 +105,7 @@ For container related resources check my [other repo](https://github.com/alexivk
 * [Webhooks and sidecars](https://medium.com/dowjones/how-did-that-sidecar-get-there-4dcd73f1a0a4)
 * [Using OPA and CRDs for security](https://neuvector.com/cloud-security/opa-crd/)
 * [K8s audit](https://kubernetes.io/docs/tasks/debug-application-cluster/audit/), Google's [audit logging](https://cloud.google.com/kubernetes-engine/docs/how-to/audit-logging) and [auditd](https://cloud.google.com/kubernetes-engine/docs/how-to/linux-auditd-logging)
+* [Setting up K9s network policies](https://www.cncf.io/blog/2019/04/19/setting-up-kubernetes-network-policies-a-detailed-guide/)
 
 ### Threat modeling
 
@@ -117,7 +125,11 @@ For container related resources check my [other repo](https://github.com/alexivk
 
 * Istio API - `curl -sL https://github.com/istio/istio/releases/download/1.4.0-beta.0/istioctl-1.4.0-beta.0-linux.tar.gz | tar xzf -`
 * Kubernetes API - `curl -sLO https://storage.googleapis.com/kubernetes-release/release/v1.16.0/bin/linux/amd64/kubectl; chmod u+x kubectl`
-* Docker registy - `curl -sL https://github.com/genuinetools/reg/releases/download/v0.16.0/reg-linux-amd64 -o reg; chmod u+x reg`
+* Etcd API- `curl -sL https://github.com/etcd-io/etcd/releases/download/v3.4.3/etcd-v3.4.3-linux-amd64.tar.gz | tar zxf - */etcctl --strip-components=1`
+* Kubelet API - `curl -L https://github.com/cyberark/kubeletctl/releases/download/v1.5/kubeletctl_linux_amd64 -o kubeletctl && chmod u+x ./kubeletctl`
+
+* Registry browser - `curl -sL https://github.com/genuinetools/reg/releases/download/v0.16.0/reg-linux-amd64 -o reg; chmod u+x reg`
 * Better alternative to the docker CLI - `curl -sL https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.16.1/crictl-v1.16.1-linux-amd64.tar.gz | tar zxf -`
-* Etcd API- `curl -sL https://github.com/etcd-io/etcd/releases/download/v3.4.3/etcd-v3.4.3-linux-amd64.tar.gz | tar zxf -`
-* GCP and DO metadata for easy kube pwnage `curl -sL https://github.com/4ARMED/kubeletmein/releases/download/v0.6.5/kubeletmein_0.6.5_linux_amd64 -o kubeletmein; chmod u+x kubeletmein`
+* GCP and DO privesc with metadata `curl -sL https://github.com/4ARMED/kubeletmein/releases/download/v0.6.5/kubeletmein_0.6.5_linux_amd64 -o kubeletmein; chmod u+x kubeletmein`
+* BoTB - `curl -sfSL "https://github.com/brompwnie/botb/releases/download/1.7.0/botb-linux-amd64" -o botb && chmod +x botb`
+* Peirates - `curl -sL https://github.com/inguardians/peirates/releases/download/v1.0.25/peirates-linux-amd64.tar.xz | tar Jxf - */peirates --strip-components=1`
