@@ -20,6 +20,7 @@
 * [CVE-2020-8557](https://issues.k8s.io/93032) - Node disk DOS by writing to container /etc/hosts
 * [CVE-2020-8558](https://issues.k8s.io/90259) - net.ipv4.conf.all.route_localnet=1 setting allows for neighboring hosts to bypass localhost boundary. [PoC](https://github.com/alexivkin/kubepwn/tree/master/CVEs/CVE-2020-8558) [source](https://github.com/tabbysable/POC-2020-8558)
 * [CVE-2020-8559](https://issues.k8s.io/92914) - Privilege escalation from compromised node to cluster.  [PoC](https://github.com/alexivkin/kubepwn/tree/master/CVEs/CVE-2020-8559) [source](https://github.com/tdwyer/CVE-2020-8559)
+* [CVE-2020-14386](https://www.openwall.com/lists/oss-security/2020/09/03/3) - A kernel bug triggering memory corruption in a network stack for privesc from processes with CAP_NET_RAW
 
 Know more? Create an issue or send me a pull request.
 

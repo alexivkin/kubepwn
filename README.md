@@ -32,13 +32,15 @@ For container related resources check my [other repo](https://github.com/alexivk
 * [Kubectl images](https://github.com/chenjiandongx/kubectl-images) - Kubectl plugin to list images for all pods and containers
 * [Kube-bench](https://github.com/aquasecurity/kube-bench) - Checking configuration weaknesses and bad defaults, check cluster against CIS-Benchmarks
 * [Kubesec](https://github.com/controlplaneio/kubesec) - Kubernets manifests and helm charts security risk analysis
-* [kube-scan](https://github.com/octarinesec/kube-scan) - Kubernetes risk assessment
+* [kube-scan](https://github.com/octarinesec/kube-scan) - Kubernetes risk assessment for workloads
 * [Popeye](https://github.com/derailed/popeye) - Cluster scanner for potential issues with deployed resources and configurations.
 * [Rakess](https://github.com/corneliusweig/rakkess) - kubectl plugin to show an access matrix for server resources
-* [audit2rbac](https://github.com/liggitt/audit2rbac) - RBAC config review
+* [audit2rbac](https://github.com/liggitt/audit2rbac) - Convert audit log to RBAC configs
+* [Krane](https://github.com/appvia/krane) - RBAC static analysis tool
 * [kubeaudit](https://github.com/Shopify/kubeaudit) - Various security config checks
 * [ktunnel](https://github.com/omrikiei/ktunnel) - reverse tunnel for K8s services to contact your host
 * [Kubetap](https://soluble-ai.github.io/kubetap/) - Sniffing and MitM kubernetes traffic
+* [dostainer](https://github.com/uchi-mata/dostainer) - Resource exhaustion automation
 
 ### Blue
 
@@ -54,13 +56,14 @@ For container related resources check my [other repo](https://github.com/alexivk
 * [Starboard](https://github.com/aquasecurity/starboard) - OSS aquasec tool to run multiple tools in the cluster for audit
 * [Checkov](https://github.com/bridgecrewio/checkov) - static code analysis for IaC deployment tools, now supports kubernetes
 
-#### Image scanners
+#### Image scanners and signers
 
 * [Anchore](https://github.com/anchore/anchore-engine)
 * [Clair](https://github.com/quay/clair)
 * [Trivy](https://github.com/aquasecurity/trivy)
 * [Vuls.io](https://vuls.io/) - OVAL based scanner
 * [Harbor](https://github.com/goharbor/harbor) - Image repo engine that signs and scans contents
+* [Grafeas](https://github.com/kelseyhightower/grafeas-tutorial)
 * [OpenSCAP](https://www.open-scap.org/) - Not really image specific but includes container support
 
 #### Monitoring
@@ -78,6 +81,15 @@ For container related resources check my [other repo](https://github.com/alexivk
 * [Sealed secrets](https://github.com/bitnami-labs/sealed-secrets) - Encrypting secrets so they can be safely stored in public repos
 * [Banzaicloud bank-vaults](https://github.com/banzaicloud/bank-vaults)
 * [External Secrets](https://github.com/godaddy/kubernetes-external-secrets) - Shim for AWS Secrets Manager and HashiCorp Vault
+
+### Tracing/development
+
+* [Squash](https://github.com/solo-io/squash) - Microservice debugger for kubernetes from IDE
+* [Ephmeral containers](https://kubernetes.io/docs/concepts/workloads/pods/ephemeral-containers/) - K8s sidecar contianers for troubleshooting
+
+### IAM
+
+* [Kube2iam](https://github.com/jtblin/kube2iam) and [Kiam](https://github.com/uswitch/kiam) - tie AWS IAM to K8s
 
 ## Trainings, Workshops and Tutorials
 
@@ -121,13 +133,17 @@ For container related resources check my [other repo](https://github.com/alexivk
 * [Capturing all the flags in BSidesSF CTF by pwning our infrastructure](https://hackernoon.com/capturing-all-the-flags-in-bsidessf-ctf-by-pwning-our-infrastructure-3570b99b4dd0)
 * [KubeCon Slides](https://sbueringer.github.io/kubecon-slides)
 
+### Cloud provided K8s
+
+* [Connect Kubernetes Applications to Azure Resources with Managed Service Identities](https://trstringer.com/connect-k8s-apps-msi/)
+* [Authenticating to GKE without gcloud](https://ahmet.im/blog/authenticating-to-gke-without-gcloud/)
+
 ## Helpful red-team one-liners
 
 * Istio API - `curl -sL https://github.com/istio/istio/releases/download/1.4.0-beta.0/istioctl-1.4.0-beta.0-linux.tar.gz | tar xzf -`
 * Kubernetes API - `curl -sLO https://storage.googleapis.com/kubernetes-release/release/v1.16.0/bin/linux/amd64/kubectl; chmod u+x kubectl`
 * Etcd API- `curl -sL https://github.com/etcd-io/etcd/releases/download/v3.4.3/etcd-v3.4.3-linux-amd64.tar.gz | tar zxf - */etcctl --strip-components=1`
 * Kubelet API - `curl -L https://github.com/cyberark/kubeletctl/releases/download/v1.5/kubeletctl_linux_amd64 -o kubeletctl && chmod u+x ./kubeletctl`
-
 * Registry browser - `curl -sL https://github.com/genuinetools/reg/releases/download/v0.16.0/reg-linux-amd64 -o reg; chmod u+x reg`
 * Better alternative to the docker CLI - `curl -sL https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.16.1/crictl-v1.16.1-linux-amd64.tar.gz | tar zxf -`
 * GCP and DO privesc with metadata `curl -sL https://github.com/4ARMED/kubeletmein/releases/download/v0.6.5/kubeletmein_0.6.5_linux_amd64 -o kubeletmein; chmod u+x kubeletmein`
