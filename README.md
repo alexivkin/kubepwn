@@ -41,6 +41,8 @@ For container related resources check my [other repo](https://github.com/alexivk
 * [ktunnel](https://github.com/omrikiei/ktunnel) - reverse tunnel for K8s services to contact your host
 * [Kubetap](https://soluble-ai.github.io/kubetap/) - Sniffing and MitM kubernetes traffic
 * [dostainer](https://github.com/uchi-mata/dostainer) - Resource exhaustion automation
+* [kubei](https://github.com/Portshift/Kubei) - Vuln scanning tool and risk assessment for clusters
+* [GKE Auditor](https://github.com/google/gke-auditor) - Check commong Google Kubernetes Engine misconfigurations
 
 ### Blue
 
@@ -55,16 +57,22 @@ For container related resources check my [other repo](https://github.com/alexivk
 * [Polaris](https://github.com/reactiveops/polaris) - validates configurations for best practices.
 * [Starboard](https://github.com/aquasecurity/starboard) - OSS aquasec tool to run multiple tools in the cluster for audit
 * [Checkov](https://github.com/bridgecrewio/checkov) - static code analysis for IaC deployment tools, now supports kubernetes
+* [syft](https://github.com/anchore/syft) - CLI tool and go library for generating a Software Bill of Materials (SBOM) from container images and filesystems.
+
 
 #### Image scanners and signers
 
-* [Anchore](https://github.com/anchore/anchore-engine)
 * [Clair](https://github.com/quay/clair)
 * [Trivy](https://github.com/aquasecurity/trivy)
+* [Anchore](https://github.com/anchore/anchore-engine) and [grype](https://github.com/anchore/grype) - yet another vulnerability scanners for container images and filesystems
 * [Vuls.io](https://vuls.io/) - OVAL based scanner
 * [Harbor](https://github.com/goharbor/harbor) - Image repo engine that signs and scans contents
 * [Grafeas](https://github.com/kelseyhightower/grafeas-tutorial)
 * [OpenSCAP](https://www.open-scap.org/) - Not really image specific but includes container support
+
+#### Versioning
+
+* [version-checker](https://github.com/jetstack/version-checker) - Checking current version of images against the latest available
 
 #### Monitoring
 
